@@ -41,9 +41,10 @@
             android:theme="@style/Theme.AppCompat.Translucent" />
 
         <!-- AWARE account service -->
-        <service android:name="com.aware.utils.Aware_Accounts">
+        <service android:name="com.aware.utils.Aware_Accounts"
+                 android:exported="true">
             <intent-filter>
-                <action android:name="android.accounts.AccountAuthenticator" />
+                <action android:name="android.accounts.AccountAuthenticator"/>
             </intent-filter>
             <meta-data
                 android:name="android.accounts.AccountAuthenticator"
